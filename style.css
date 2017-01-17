@@ -2,9 +2,12 @@
   display: inline-block;
   width: 200px;
   height: 200px;
-  background: #dfd;
+  background: #dde8ff;
   margin: 20px;
-  border: 20px solid #bbddbb;
+  border: 20px solid #bbbbbb;
+}
+.shape:hover {
+  background: #fdd;
 }
 .Round {
   -webkit-border-radius: 9999px;

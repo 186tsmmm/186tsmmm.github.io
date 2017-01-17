@@ -2,8 +2,8 @@
 @lightGreen:#dfd;
 @lightBlue:#ddf;
 
-@defaultThemeColor:@lightGreen;
-@borderColor:@defaultThemeColor - #222;
+@defaultThemeColor:spin(@lightGreen, 100);
+@borderColor:darken(desaturate(@defaultThemeColor, 100%), 20%);
 
 @defaultRadius:30px;
 
@@ -11,12 +11,15 @@
 @borderSize:@defaultShapesWidth * 0.1;
 
 .shape{
-    display:inline-block;
-    width:@defaultShapesWidth;
-    height:200px;
-    background:@defaultThemeColor;
-    margin:20px;
-    border: @borderSize solid @borderColor;
+  display:inline-block;
+  width:@defaultShapesWidth;
+  height:200px;
+  background:@defaultThemeColor;
+  margin:20px;
+  border: @borderSize solid @borderColor;
+  &:hover{
+		background:@lightRed;
+	}
 }
 
 .RoundedShape(@radius:@defaultRadius){
