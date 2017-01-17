@@ -4,6 +4,7 @@
   height: 200px;
   background: #dfd;
   margin: 20px;
+  border: 20px solid #bbddbb;
 }
 .Round {
   -webkit-border-radius: 9999px;
@@ -19,4 +20,9 @@
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+}
+#shape3 {
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
 }
